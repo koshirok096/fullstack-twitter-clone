@@ -22,8 +22,8 @@ const connect = () => {
     });
 };
 
-app.use(express.json());
 app.use(cookieParser());
+app.use(express.json());
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/tweets", tweetRoutes);
@@ -32,4 +32,3 @@ app.listen(8000, () => {
     connect();
     console.log("I'm listening to port 8000");
 })
-``
