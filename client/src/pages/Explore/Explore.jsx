@@ -9,7 +9,7 @@ const Explore = () => {
             <div className='px-6'>
                 <LeftSidebar />
             </div>
-            <div className='col-span-2 border-x-2 border-t-slate-800 px-6'>
+            <div className='col-span-2 border-x-2 border-t-slate-800'>
                 <ExploreTweets />
             </div>
             <div className='px-6'>

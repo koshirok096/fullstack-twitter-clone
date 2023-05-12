@@ -4,10 +4,10 @@ const RightSidebar = () => {
     return (
     <div className="p-6 bg-slate-100 rounded-lg mx-4 space-y-4">
             <h2 className="font-medium">Trending</h2>
-            <p className="font-bold">#Shohei Ohtani</p>
-            <p className="font-bold">#Otoko Ha Tsurai Yo</p>
-            <p className="font-bold">#Tetsuya Takeda</p>
-            <p className="font-bold">#Elon Musk</p>
+            <p className="font-bold">#MATANA</p>
+            <p className="font-bold">#MAMAA</p>
+            <p className="font-bold">#FAANG</p>
+            <p className="font-bold">#GAFA</p>
         </div>
     )
 };

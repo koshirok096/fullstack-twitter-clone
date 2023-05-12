@@ -64,19 +64,22 @@ const Profile = () => {
         <div className="px-6">
           <LeftSidebar />
         </div>
-        <div className="col-span-2 border-x-2 border-t-slate-800 px-6">
-          <div className="flex justify-between items-center">
+        <div className="col-span-2 border-x-2 border-t-slate-800">
+          <div className="flex flex-col">
+            <div className="w-full h-52 mycd-profilebg"></div>
+            <div className="flex justify-between items-center">
             <img
               src={userProfile?.profilePicture}
               alt="Profile Picture"
-              className="w-12 h-12 rounded-full"
+              className="w-32 h-32 ml-2 rounded-full m-2"
+              style={{ marginTop: "-5rem" }}
             />
             {currentUser._id === id ? (
               <button
-                className="px-4 -y-2 bg-blue-500 rounded-full text-white"
+                className="px-4 -y-2 m-2 bg-blue-500 rounded-full text-white"
                 onClick={() => setOpen(true)}
               >
-                Edit Profile
+                Set up profile
               </button>
             ) : currentUser.following.includes(id) ? (
               <button
@@ -93,6 +96,7 @@ const Profile = () => {
                 Follow
               </button>
             )}
+            </div>
           </div>
           <div className="mt-6">
             {userTweets &&

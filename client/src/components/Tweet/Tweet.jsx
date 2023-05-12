@@ -62,6 +62,7 @@ const Tweet = ({ tweet, setData }) => {
         <>
           <div className="flex space-x-2">
             {/* <img src="" alt="" /> */}
+            
             <Link to={`/profile/${userData._id}`}>
               <h3 className="font-bold">{userData.username}</h3>
             </Link>
@@ -73,9 +74,9 @@ const Tweet = ({ tweet, setData }) => {
           <p>{tweet.description}</p>
           <button onClick={handleLike}>
             {tweet.likes.includes(currentUser._id) ? (
-              <FavoriteIcon className="mr-2 my-2 cursor-pointer"></FavoriteIcon>
+              <FavoriteIcon className="mr-2 my-2 cursor-pointer text-pink-500"></FavoriteIcon>
             ) : (
-              <FavoriteBorderIcon className="mr-2 my-2 cursor-pointer"></FavoriteBorderIcon>
+              <FavoriteBorderIcon className="mr-2 my-2 cursor-pointer text-stone-500"></FavoriteBorderIcon>
             )}
             {tweet.likes.length}
           </button>
